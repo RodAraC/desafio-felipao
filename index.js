@@ -1,32 +1,22 @@
-let nomeDoHeroi = ""
-let xpDoHeroi = 0
+let nomeDoHeroi = "Rodrigo"
+let xpDoHeroi = 250000
 let nivel = ""
 
-switch(xpDoHeroi){
-  case xpDoHeroi <= 1.000:
-    nivel = Ferro
-    break
-  case xpDoHeroi >= 1.001 || xpDoHeroi <= 2.000 :
-    nivel = Bronze
-    break  
-  case xpDoHeroi >= 2.001 || xpDoHeroi <= 5.000:
-    nivel = Prata
-    break
-  case xpDoHeroi >= 5.001 || xpDoHeroi <= 7.000:
-    nivel = Ouro
-    break
-  case xpDoHeroi >= 7.001 || xpDoHeroi <= 8.000:
-    nivel = Platina
-    break
-  case xpDoHeroi >= 8.001 || xpDoHeroi <= 9.000:
-    nivel = Ascendente
-    break  
-  case xpDoHeroi >= 9.001 || xpDoHeroi <= 10.000:
-    nivel = Imortal
-    break
-  default:
-    nivel = Radiante
-      
+if(xpDoHeroi <= 1000){
+  nivel = "Ferro" 
+}else if((xpDoHeroi >= 1001) && (xpDoHeroi <= 2000)){
+  nivel = "Bronze"
+}else if((xpDoHeroi >= 2001) && (xpDoHeroi <= 5000)){
+  nivel = "Prata"
+}else if((xpDoHeroi >= 5001) && (xpDoHeroi <= 7000)){
+  nivel = "Ouro"
+}else if((xpDoHeroi >= 7001) && (xpDoHeroi <= 8000)){
+  nivel = "Platina"
+}else if((xpDoHeroi >= 8001) && (xpDoHeroi <= 9000)){
+  nivel = "Ascendente"
+}else if((xpDoHeroi >= 9001) && (xpDoHeroi <= 10000)){
+  nivel = "Imortal"
+}else{
+  nivel = "Radiante"
 }
-
 console.log("O Herói de nome " + nomeDoHeroi + " está no nível de " + nivel)
