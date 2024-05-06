@@ -1,0 +1,1 @@
+console.log("O heroi tem saldo de ")
